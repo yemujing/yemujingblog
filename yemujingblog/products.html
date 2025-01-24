@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品推荐 - 野木井</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- 左侧导航栏 -->
+        <nav class="side-nav">
+            <div class="nav-header">
+                <h1 class="site-title">野木井</h1>
+            </div>
+            <div class="nav-content">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">
+                        <span class="nav-icon">🏠</span>
+                        <span>首页</span>
+                    </a></li>
+                    <li><a href="#articles" class="nav-item">
+                        <span class="nav-icon">📝</span>
+                        <span>文章</span>
+                    </a></li>
+                    <li><a href="products.html" class="nav-item active">
+                        <span class="nav-icon">🎯</span>
+                        <span>产品推荐</span>
+                    </a></li>
+                    <li><a href="#about" class="nav-item">
+                        <span class="nav-icon">ℹ️</span>
+                        <span>关于</span>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <section class="products-header">
+                <div class="container">
+                    <h2>发现优质产品</h2>
+                    <p>精选来自 Product Hunt 的优质产品，助你提升工作效率与生活品质</p>
+                    <div class="product-filters">
+                        <button class="filter-btn active" data-category="all">全部</button>
+                        <button class="filter-btn" data-category="AI">AI</button>
+                        <button class="filter-btn" data-category="Productivity">效率工具</button>
+                        <button class="filter-btn" data-category="Development">开发工具</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-hunt-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>今日最热</h3>
+                        <button class="reset-data-btn">重置数据</button>
+                    </div>
+                    <div class="product-grid">
+                        <!-- 产品卡片将通过 JavaScript 动态加载 -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 野木井. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

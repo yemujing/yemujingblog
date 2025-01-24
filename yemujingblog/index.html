@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野木井 - 互联网产品分享</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- 左侧导航栏 -->
+        <nav class="side-nav">
+            <div class="nav-header">
+                <h1 class="site-title">野木井</h1>
+            </div>
+            <div class="nav-content">
+                <ul class="nav-menu">
+                    <li><a href="./index.html" class="nav-item active">
+                        <span class="nav-icon">🏠</span>
+                        <span>首页</span>
+                    </a></li>
+                    <li><a href="./articles.html" class="nav-item">
+                        <span class="nav-icon">📝</span>
+                        <span>文章</span>
+                    </a></li>
+                    <li><a href="./products.html" class="nav-item">
+                        <span class="nav-icon">🎯</span>
+                        <span>产品推荐</span>
+                    </a></li>
+                    <li><a href="#about" class="nav-item">
+                        <span class="nav-icon">ℹ️</span>
+                        <span>关于</span>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <section class="hero">
+                <div class="container">
+                    <h2>发现互联网之美</h2>
+                    <p>在这里，我们用优雅的文字记录数字时代的点滴，分享那些改变生活的产品与思考</p>
+                    <button class="add-post-btn">
+                        <span class="icon">+</span> 新建文章
+                    </button>
+                </div>
+            </section>
+
+            <section class="featured-posts">
+                <div class="container">
+                    <h3>所有文章</h3>
+                    <div class="post-grid">
+                        <!-- 文章卡片将通过 JavaScript 动态加载 -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 添加/编辑文章的模态框 -->
+            <div id="postModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closePostModal()">&times;</span>
+                    <h3 id="modalTitle">发布新文章</h3>
+                    <form id="postForm">
+                        <input type="hidden" id="postId">
+                        <div class="form-group">
+                            <label for="title">标题：</label>
+                            <input type="text" id="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="excerpt">摘要：</label>
+                            <textarea id="excerpt" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">图片URL：</label>
+                            <input type="url" id="image" required>
+                        </div>
+                        <button type="submit">保存</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 野木井. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> 
